@@ -86,13 +86,12 @@ export default function Navbar() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map(({ name, path }) => (
-                <HStack justifyContent={'space-between'} >
-                <Box key={path}>
+                
+                <div key={path}>
                 <NavLink path={path}>
                   {name}
                 </NavLink>
-                </Box>
-                </HStack>
+                </div>
               ))}
             </HStack>
             <ColorModeSwitcher />
@@ -121,12 +120,12 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map(({ name, path }) => (
-                <VStack>
-                <Box key={path}>
+                <VStack key={path}>
+                <div >
                 <NavLink path={path}>
                   {name}
                 </NavLink>
-                </Box>
+                </div>
                 </VStack>
               ))}
             </Stack>

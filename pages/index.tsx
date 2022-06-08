@@ -25,7 +25,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsPerson, BsPhone, BsTwitter } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 import { FormEvent } from 'react';
 
@@ -194,7 +194,9 @@ const IndexRoute: React.FC = ({}) => {
                       <FormLabel>Nombre</FormLabel>
   
                       <InputGroup>
-                        <InputLeftElement children={<BsPerson />} />
+                        <InputLeftElement>
+                        <BsPerson />
+                        </InputLeftElement>
                         <Input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" placeholder="Tu nombre" />
                       </InputGroup>
                     </FormControl>
@@ -203,7 +205,9 @@ const IndexRoute: React.FC = ({}) => {
                       <FormLabel>Email</FormLabel>
   
                       <InputGroup>
-                        <InputLeftElement children={<MdOutlineEmail />} />
+                        <InputLeftElement>
+                        <MdOutlineEmail />
+                        </InputLeftElement>
                         <Input
                         value={email} onChange={e => setEmail(e.target.value)}
                           type="email"
@@ -218,7 +222,9 @@ const IndexRoute: React.FC = ({}) => {
                       <FormLabel>Teléfono</FormLabel>
   
                       <InputGroup>
-                        <InputLeftElement children={<BsPerson />} />
+                        <InputLeftElement>
+                        <BsPhone />
+                        </InputLeftElement>
                         <Input value={phone} onChange={e => setPhone(e.target.value)} type="tel" id="phone" name="phone" placeholder="Tu número de teléfono" />
                       </InputGroup>
                     </FormControl>

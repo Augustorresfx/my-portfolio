@@ -48,7 +48,7 @@ import {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        const form = {
+        let form = {
             name,
             email,
             phone,
@@ -56,7 +56,24 @@ import {
         }
 
         //submit via api
+        const rawResponse = await fetch('/api/submit', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(form)
+        });
+        const content = await rawResponse.json();
 
+        // print to screen
+        alert(content.data.tableRange)
+
+        // Reset the form fields
+        setMessage('')
+        setPhone('')
+        setName('')
+        setEmail('')
         
     }
 

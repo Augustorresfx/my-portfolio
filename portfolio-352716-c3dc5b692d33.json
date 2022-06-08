@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "portfolio-352716",
+  "private_key_id": "c3dc5b692d333d87abe5a81ead35155dc3e3feb8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1x/RS6SsnxlL4\nZt4kQD0YdcJHPchL3pNkluwbQuvqmOo6KI5i6JLYoiGp1C8/bc2aPRy3fVcvlVfV\nN8z/i9JW8BC5bFHv5oBBzJU1GuLrCpYtLy7ZUTL0izDyC7awnPiWH05H5yOPO2Bi\n/QFAymgyKgu37cOa5PGPdpaDqjBLpw1LZIVRCTBE+8ONs7vWCMYYSUXhn6w0rKuY\nYDg95gN1Kzq5z56nQD6vrCeYdRmx4QqQOP3MmkxXQCTs6l4a5E1jnY8Lc/4X3m/T\nbLo469Z04HNSws8z1kfyiDNEhSnfQUAcLnPQMwxxCxJqShgKJZbhv63UoelTZqHx\nV9HdXcRZAgMBAAECggEAFLVkxhU+D1ful9HQOL0AuMqhiVAmg04l6G2xFCH5kk49\nUMbSAb6RDBDcWOaNQ2KU659OqDClQAx5ZxbmSa56FeFfZmBKrVPLBLPzw4r+ktwv\n45Heem9fqLA6sThYZaJcR23lkxdn26deAajk/aaRXDWiBCAYCotOYZOW7gTzX4rE\ns2AtAOME2A0v0rGU0Uylf6KBtI0kG+oAUo8NN1amT1aUfCwHY7mND4L8KBzACef+\n4Xt6U7RdTqBQvZd62vQQ9CxLMG2uQl57hlr6e7HJ1Qbku5RDMi/Z7QuAZtHbO9bS\nT0UB+0u+O6crz28IzVLeIvE9OYdzPpRrIRNUF2k9aQKBgQD5cINwhTEbR5N2X5vx\nFXAcDvXNb8yeiPlPOws07lea8SJQW2hwtqexVBJJEI5odfRzW3L/06jXArKJAVG0\nmj5oo8/3HY3ffnj8wn8DM42q2XXmWSApD2tB0ha1eSxa6oUIWLEZnpFuaw98mKiN\nQqO+kIIUaxz2xwjluPGV1PuV8wKBgQC6j+TXCj+2P2DDIzWj1rJaehE/SIMAMX3c\nuPkgcV6fLCgORxGto8G9iAmpe5g8AzWZSAgJ7tatqsShRcSsb78Qj+SoS2iq6Dwr\nX7T4+DEQAs5oaDeBGFAAITehgyA66FIfjXlU+Lis7OdfjaRG8aAJoZD73PsUfkAw\nM8n5jkUTgwKBgAjSj/OU4m3ClFalfxCB35s+dDc18xjQY3EH95eBrpuOV9ZbxU/n\nRfshrBvleAP92A2UeHbP97LTJ5ls8ITgx8BPuvVUmEYFZSYbgv6L/kDCvEbPdDG/\nl92WHrOAe68jiF0JNgpf72jmZH/VrnCAoOYGmnM6bqXT2F63sePIyrU9AoGBAIVF\nv+NCZgsqMVSVNX9qIxTxOJrtkO+1a0UfOpDLjB3HLIIukNlrLz7XDJfvO+w7GrH6\nPAvke6WqZTcUIRBR77rEIEN9QzM8HaeagiyNGHdomc0KDgSBurys/hG6G28ZgXka\n1n82Aq89uXeQNrebaokWyvyxewfDvNTyWimVUZFDAoGBAMiCKDdoO/o49PNNfT8v\nbz+keAtf7I0LTBzE/C23NzRsvIBQJcA88Zn+AxZ6+wS99rZ98HxmZvoDWRpoZ2fe\n3f8DazsI/88ZcQXy1mKN96+FG8Y2A3Eq4ISPC8sNjQi/quSSX57MmMN+tLgUMHuy\nI1VFob3/wMS9bdHDaF7uhhpt\n-----END PRIVATE KEY-----\n",
+  "client_email": "augusto-torres@portfolio-352716.iam.gserviceaccount.com",
+  "client_id": "115233015556856822006",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/augusto-torres%40portfolio-352716.iam.gserviceaccount.com"
+}

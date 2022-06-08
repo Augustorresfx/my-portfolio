@@ -87,7 +87,7 @@ export default function Navbar() {
             >
               {Links.map(({ name, path }) => (
                 <HStack justifyContent={'space-between'} >
-                <NavLink path={path}>
+                <NavLink key={path} path={path}>
                   {name}
                 </NavLink>
                 </HStack>
@@ -120,7 +120,7 @@ export default function Navbar() {
             <Stack as={"nav"} spacing={4}>
               {Links.map(({ name, path }) => (
                 <VStack>
-                <NavLink path={path}>
+                <NavLink key={path} path={path}>
                   {name}
                 </NavLink>
                 </VStack>

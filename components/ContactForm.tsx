@@ -215,7 +215,7 @@ import {
                       _hover={{
                         bg: 'blue.500',
                       }}
-                      isFullWidth>
+                      >
                       Enviar Mensaje
                     </Button>
                   </VStack>

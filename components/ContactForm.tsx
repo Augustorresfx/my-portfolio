@@ -177,6 +177,7 @@ import {
                   p={8}
                   color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                   shadow="base">
+                <form onSubmit={handleSubmit}>
                   <VStack spacing={5}>
                     <FormControl isRequired>
                       <FormLabel>Nombre</FormLabel>
@@ -225,7 +226,7 @@ import {
                     </FormControl>
   
                     <Button
-                    type='submit'
+                      type="submit"
                       colorScheme="blue"
                       bg="blue.400"
                       color="white"
@@ -236,6 +237,7 @@ import {
                       Enviar Mensaje
                     </Button>
                   </VStack>
+                  </form>
                 </Box>
               </Stack>
             </VStack>

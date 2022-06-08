@@ -14,7 +14,6 @@ const Layout = ({ children }: ILayoutProps) => {
       <Navbar />
 
       {children}
-      <ContactForm/>
       {<Footer/>}
     </>
   );

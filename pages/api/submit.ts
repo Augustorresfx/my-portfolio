@@ -51,7 +51,8 @@ export default async function handler(
             data: response.data
         })
     }catch (e) {
-        return res.status(404)
+        console.error(e)
+        return res.status(500)
     }
 
 }

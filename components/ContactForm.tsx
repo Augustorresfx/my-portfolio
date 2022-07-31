@@ -1,11 +1,14 @@
 import Head from 'next/head'
-import { VStack, FormControl, FormLabel, InputGroup, InputLeftElement, Input, Textarea, Button,  } from '@chakra-ui/react'
+import { VStack, FormControl, FormLabel, useClipboard,
+  useColorModeValue, Link, Flex, Box, Heading, Stack, Tooltip, IconButton, InputGroup, InputLeftElement, Input, Textarea, Button,  } from '@chakra-ui/react'
 import { useState } from 'react'
-import { BsPerson, BsPhone } from 'react-icons/bs'
-import { MdOutlineEmail } from 'react-icons/md'
-
+import { BsPerson, BsTwitter, BsLinkedin, BsGithub, BsFacebook, BsPhone } from 'react-icons/bs'
+import { MdOutlineEmail, MdEmail } from 'react-icons/md'
+import { FormEvent } from 'react';
 
 const ContactForm = (props: any) => {
+
+  const { hasCopied, onCopy } = useClipboard('augustorresfx@gmail.com');
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -13,7 +16,7 @@ const ContactForm = (props: any) => {
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log('Sending')
 
@@ -45,6 +48,101 @@ const ContactForm = (props: any) => {
   }
 
   return (<>
+      <Flex minW={'398px'}
+
+align="center"
+justify="center"
+id="contact">
+<Box
+  borderRadius="lg"
+  m={{ base: 5, md: 16, lg: 10 }}
+  p={{ base: 5, lg: 16 }}>
+  <Box>
+    <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
+      <Heading
+        fontSize={{
+          base: '4xl',
+          md: '5xl',
+        }}>
+        Contáctame. 📩
+      </Heading>
+
+      <Stack
+        spacing={{ base: 4, md: 8, lg: 20 }}
+        direction={{ base: 'column', md: 'row' }}>
+        <Stack
+          align="center"
+          justify="space-around"
+          direction={{ base: 'row', md: 'column' }}>
+          <Tooltip
+            label={hasCopied ? 'Email Copied!' : 'Copy Email'}
+            closeOnClick={false}
+            hasArrow>
+            <IconButton
+              aria-label="email"
+              variant="ghost"
+              size="lg"
+              fontSize="3xl"
+              icon={<MdEmail />}
+              _hover={{
+                bg: 'blue.500',
+                color: useColorModeValue('white', 'gray.700'),
+              }}
+              onClick={onCopy}
+              isRound
+            />
+          </Tooltip>
+
+          <Link href="#">
+            <IconButton
+              aria-label="github"
+              variant="ghost"
+              size="lg"
+              fontSize="3xl"
+              icon={<BsGithub />}
+              _hover={{
+                bg: 'blue.500',
+                color: useColorModeValue('white', 'gray.700'),
+              }}
+              isRound
+            />
+          </Link>
+
+          <Link href="#">
+            <IconButton
+              aria-label="twitter"
+              variant="ghost"
+              size="lg"
+              icon={<BsTwitter size="28px" />}
+              _hover={{
+                bg: 'blue.500',
+                color: useColorModeValue('white', 'gray.700'),
+              }}
+              isRound
+            />
+          </Link>
+
+          <Link href="#">
+            <IconButton
+              aria-label="linkedin"
+              variant="ghost"
+              size="lg"
+              icon={<BsLinkedin size="28px" />}
+              _hover={{
+                bg: 'blue.500',
+                color: useColorModeValue('white', 'gray.700'),
+              }}
+              isRound
+            />
+          </Link>
+        </Stack>
+
+        <Box
+          bg={useColorModeValue('white', 'gray.700')}
+          borderRadius="lg"
+          p={8}
+          color={useColorModeValue('gray.700', 'whiteAlpha.900')}
+          shadow="base">
     <form onSubmit={handleSubmit}>
                   <VStack spacing={5}>
                     <FormControl isRequired>
@@ -112,6 +210,13 @@ const ContactForm = (props: any) => {
                     </Button>
                   </VStack>
                   </form>
+                  </Box>
+                
+              </Stack>
+            </VStack>
+          </Box>
+        </Box>
+      </Flex>
                   </>
   )
 }

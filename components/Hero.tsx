@@ -5,17 +5,17 @@ import {
     Image,
     Stack,
     Text,
-    useBreakpointValue,
+    useBreakpointValue, useColorModeValue
 } from '@chakra-ui/react'
 import Link from 'next/link';
 
 export default function Hero() {
     return (
-        <Stack zIndex={-1} minH={'100vh'} minW={'380px'} direction={{ base: 'column', md: 'row' }}>
+        <Stack  bgGradient='linear(to-tr, #142322, #0f141c, #362b44)' zIndex={-1} minH={'100vh'} minW={'398px'} direction={{ base: 'column', md: 'row' }}>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                        <Text zIndex={-1} as={'span'} position={'relative'} _after={{
+                        <Text zIndex={0} as={'span'} position={'relative'} _after={{
                             content: "''",
                             width: 'full',
                             height: useBreakpointValue({ base: '20%', md: '30%' }),
@@ -41,6 +41,7 @@ export default function Hero() {
                             rounded={'full'}
                             bg={'blue.400'}
                             color={'white'}
+                            boxShadow='dark-lg'
                             _hover={{ bg: 'blue.500',}}
                             
                         ><Link href={'#categorias'}>

@@ -52,7 +52,7 @@ export default async function handler(
         })
     }catch (e) {
         console.error(e)
-        return res.status(500)
+        return res.status(504).send({message: 'error'})
     }
 
 }

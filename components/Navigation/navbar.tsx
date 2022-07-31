@@ -68,9 +68,9 @@ export default function Navbar() {
 
   return (
     <div className={navStyles.mobileNav}>
-      <Box zIndex={1} minW={'398px'} bg={useColorModeValue("gray.100", "gray.900")} px={4}>
-        <Flex zIndex={1} h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <IconButton zIndex={1}
+      <Box zIndex={0} minW={'398px'}  px={4}>
+        <Flex zIndex={0} h={16} alignItems={"center"} justifyContent={"space-between"}>
+          <IconButton zIndex={0}
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
@@ -121,7 +121,7 @@ export default function Navbar() {
             <Stack as={"nav"} spacing={4}>
               {Links.map(({ name, path }) => (
                 <VStack key={path}>
-                <div >
+                <div>
                 <NavLink path={path}>
                   {name}
                 </NavLink>

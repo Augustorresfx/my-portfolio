@@ -28,6 +28,7 @@ import { useState } from 'react';
 import { BsGithub, BsLinkedin, BsPerson, BsPhone, BsTwitter } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 import { FormEvent } from 'react';
+import ContactForm from "../components/ContactForm";
 
 const confetti = {
   light: {
@@ -90,13 +91,10 @@ const IndexRoute: React.FC = ({}) => {
   return   <>
     <Hero/>
     <Flex minW={'398px'}
-        bg={useColorModeValue('gray.100', 'gray.900')}
+
         align="center"
         justify="center"
-        css={{
-          backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
-          backgroundAttachment: 'fixed',
-        }}
+        bgGradient='linear(to-br, #142322, #0f141c, #362b44)'
         id="contact">
         <Box
           borderRadius="lg"
@@ -256,6 +254,7 @@ const IndexRoute: React.FC = ({}) => {
                   </VStack>
                   </form>
                 </Box>
+                <ContactForm/>
               </Stack>
             </VStack>
           </Box>

@@ -94,7 +94,7 @@ const IndexRoute: React.FC = ({}) => {
 
         align="center"
         justify="center"
-        bgGradient='linear(to-br, #142322, #0f141c, #362b44)'
+      
         id="contact">
         <Box
           borderRadius="lg"
@@ -186,75 +186,9 @@ const IndexRoute: React.FC = ({}) => {
                   p={8}
                   color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                   shadow="base">
-                <form onSubmit={handleSubmit}>
-                  <VStack spacing={5}>
-                    <FormControl isRequired>
-                      <FormLabel>Nombre</FormLabel>
-  
-                      <InputGroup>
-                        <InputLeftElement>
-                        <BsPerson />
-                        </InputLeftElement>
-                        <Input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" placeholder="Tu nombre" />
-                      </InputGroup>
-                    </FormControl>
-  
-                    <FormControl isRequired>
-                      <FormLabel>Email</FormLabel>
-  
-                      <InputGroup>
-                        <InputLeftElement>
-                        <MdOutlineEmail />
-                        </InputLeftElement>
-                        <Input
-                        value={email} onChange={e => setEmail(e.target.value)}
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Tu Email"
-                        />
-                      </InputGroup>
-                    </FormControl>
-  
-                    <FormControl isRequired>
-                      <FormLabel>Teléfono</FormLabel>
-  
-                      <InputGroup>
-                        <InputLeftElement>
-                        <BsPhone />
-                        </InputLeftElement>
-                        <Input value={phone} onChange={e => setPhone(e.target.value)} type="tel" id="phone" name="phone" placeholder="Tu número de teléfono" />
-                      </InputGroup>
-                    </FormControl>
-
-                    <FormControl isRequired>
-                      <FormLabel>Mensaje</FormLabel>
-  
-                      <Textarea
-                      value={message} onChange={e => setMessage(e.target.value)}
-                        name="message"
-                        id="message"
-                        placeholder="Tu mensaje"
-                        rows={6}
-                        resize="none"
-                      />
-                    </FormControl>
-  
-                    <Button
-                      type="submit"
-                      colorScheme="blue"
-                      bg="blue.400"
-                      color="white"
-                      _hover={{
-                        bg: 'blue.500',
-                      }}
-                      >
-                      Enviar Mensaje
-                    </Button>
-                  </VStack>
-                  </form>
+               <ContactForm/>
                 </Box>
-                <ContactForm/>
+                
               </Stack>
             </VStack>
           </Box>

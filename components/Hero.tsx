@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Hero() {
     return (
-        <Stack  bgGradient='linear(to-tr, #142322, #0f141c, #362b44)' zIndex={-1} minH={'100vh'} minW={'398px'} direction={{ base: 'column', md: 'row' }}>
+        <Stack zIndex={-1} minH={'100vh'} minW={'398px'} direction={{ base: 'column', md: 'row' }}>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
